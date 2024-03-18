@@ -4,38 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
 <div class="container">
-    <div class="main_header"> Main header</div>
-    <div class="user_header"> User header </div>
+    <div class="main_header">
+        <div class="search">
+            <iconify-icon icon="mdi:search"></iconify-icon>
+            <input type="text" name="search" placeholder="Find project">
+        </div>
+        <div class="user_panel">
+            <div><iconify-icon icon="mdi:notifications-active"></iconify-icon></div>
+            <div class="logo_img">
+                <img src="" alt="Logo img" />
+            </div>
+            <div class="username"> Morgan Oakley </div>
+        </div>
+    </div>
+    <div class="user_header"> 
+        <div class="logo_img">
+            <img src="" alt="Logo img" />
+        </div>
+        <div class="greeting">
+            <div>Hi there,</div>
+            <div class="username">Morgan Oakley (@morgan)</div>
+        </div>
+        <div class="user_actions">
+            <button>New</button>
+            <button>Update</button>
+            <button>Share</button>
+        </div>
+    </div>
     <div class="dashboard">
         <div class="logo">
-            Dashboard
+            <ul>
+                <li>
+                    <iconify-icon icon="mdi:view-dashboard"></iconify-icon>
+                    Dashboard
+                </li>
+            </ul>
         </div>
         <div class="menu">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li><iconify-icon icon="mdi:home"></iconify-icon>Home</li>
+                <li><iconify-icon icon="mdi:card-account-details-outline"></iconify-icon>Profile</li>
+                <li><iconify-icon icon="mdi:message-reply"></iconify-icon>Messages</li>
+                <li><iconify-icon icon="mdi:clock-time-three"></iconify-icon>History</li>
+                <li><iconify-icon icon="mdi:file-multiple"></iconify-icon>Tasks</li>
+                <li><iconify-icon icon="mdi:people-group"></iconify-icon>Communities</li>
             </ul>
         </div>
         <div class="settings">
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><iconify-icon icon="mdi:settings"></iconify-icon>Settings</li>
+                <li><iconify-icon icon="mdi:question-mark-box"></iconify-icon>Support</li>
+                <li><iconify-icon icon="mdi:shield-check"></iconify-icon>Privacy</li>
             </ul>
         </div>
     </div>
     <div class="content">
-        <div class="project">Projects</div>
-        <div class="announcement">Announcement</div>
-        <div class="trending">Trending</div>
+        <div class="main_part">
+            <div class="title">Your Projects</div>
+            <div class="cards">
+                <div class="card">
+                    <div class="title"> Felix Felicis </div>
+                    <div class="description"> Also called "Digital Luck", is an application that make the drinker lucky for a period of time, during which everything they attempt would be successful. It is turning an ordinary day into an extraordinary one. It was very difficult to make, disastrous if made wrong, and required six months of coding before it was ready to be used. </div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title">Project X.Y.Z</div>
+                    <div class="description"> Top secret application that does top secret things. Use only in critical situations.</div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title">To victory</div>
+                    <div class="description"> Motivates people to reach their goals and 'touch the sky'. Before use consult your goals with a physician for a thorough evaluation.</div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title">Serious project about nothing</div>
+                    <div class="description"> This is so far my best project. I don't know what it does. </div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title">Rule The World</div>
+                    <div class="description"> Application to rule the world. Free to use. Warning: Not tested, because I am not intrested in rulling the world... </div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title">Money Maker</div>
+                    <div class="description"> Make MANY MANY Money with no effort. Satisfaction guaranteed! Put your card credentials to application, it will invest your money and give you 20% more every day!</div>
+                    <div class="icons"></div>
+                </div>
+                <div class="card">
+                    <div class="title"> Tasks reminder </div>
+                    <div class="description"> Another great app to manage your task. But this one is much better! It will trully change your life. You will stop forgetting about tasks, you will be organized and happy person. Try it! </div>
+                    <div class="icons"></div>
+                </div>
+            </div>
+        </div>
+        <div class="announcement">
+            <div class="title">Announcement</div>
+            <table class="side_box">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="title">Site Maintenance</div>
+                            <div class="description">Website maintenance includes tasks like ensuring all the links on your site are working, regularly updating content, and fixing any broken links.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Site Maintenance</div>
+                            <div class="description">Website maintenance includes tasks like ensuring all the links on your site are working, regularly updating content, and fixing any broken links.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Site Maintenance</div>
+                            <div class="description">Website maintenance includes tasks like ensuring all the links on your site are working, regularly updating content, and fixing any broken links.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trending">
+            <div class="title">Trending</div>
+            <table class="side_box">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="logo_img"><img src="" alt="Logo img"></div>
+                        </td>
+                        <td>
+                            <div class="title">User 01</div>
+                            <div class="description">Project name 1</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="logo_img"><img src="" alt="Logo img"></div>
+                        </td>
+                        <td>
+                            <div class="title">User 02</div>
+                            <div class="description">Project name 2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="logo_img"><img src="" alt="Logo img"></div>
+                        </td>
+                        <td>
+                            <div class="title">User 03</div>
+                            <div class="description">Project name 3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="logo_img"><img src="" alt="Logo img"></div>
+                        </td>
+                        <td>
+                            <div class="title">User 04</div>
+                            <div class="description">Project name 4</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 </body>
